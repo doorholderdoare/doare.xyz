@@ -38,9 +38,7 @@ body{
 }
 
 .progress::-moz-range-progress,
-.volume::-moz-range-progress,
-.progress::-webkit-progress,
-.volume::-webkit-progress-value{
+.volume::-moz-range-progress{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -52,9 +50,7 @@ body{
 }
 
 .progress::-moz-range-thumb,
-.volume::-moz-range-thumb,
-.progress::-webkit-slider-thumb,
-.volume::-webkit-slider-thumb{
+.volume::-moz-range-thumb{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -66,3 +62,24 @@ body{
     border-radius: 50%;
 }
 
+.progress::-webkit-slider-runnable-track,
+.volume::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: yellow;
+    overflow: hidden;
+    height:6px;
+    border-radius: 10px;
+}
+
+.progress::-webkit-slider-thumb,
+.volume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-color: yellow;
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+}
