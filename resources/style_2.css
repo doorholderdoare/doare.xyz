@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
+
+:root{
+    --main-color: rgb(255, 166, 0);
+    --shadow-color: rgb(161, 105, 0);
+    --dark-bg: rgb(10,10,10);
+    --cooler-color: rgb(165, 82, 206);
+    --lighter-dark: rgb(15,15,15);
+    --lighter-color: rgb(25,25,25);
+}
+
+body {
+    color:white;
+    margin: 0;
+    padding: 0;
+    background: var(--dark-bg);
+    font-family: 'Ubuntu Mono', monospace;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+.pre-load{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+    cursor: pointer;
+}
+
+.btn-screen{
+    transition:all 0.1s ease-in-out;
+}
+
+.btn-screen:hover{
+    transform:scale(2);
+    color:var(--main-color);
+}
+
+/* Main stuff */
+
+.main-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-container {
+    position:absolute;
+    display:flex;
+    background-color: var(--lighter-dark);
+    min-height: 20em;
+    min-width: 35em;
+    border-radius: 30px;
+    overflow: hidden;
+    /* box-shadow:0px 5px var(--shadow-color); */
+
+    /* setting position */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 0px 10px white;
+
+    transition: all ease-in-out .3s;
+}
+
+
+
+.banner{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width: 100%;
+    min-height: 20%;
+    background-color: var(--lighter-dark);
+    overflow: hidden;
+}
+
+.banner-gif{
+    position:absolute;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lighter-dark);
+    object-fit: cover;
+}
+
+.content{
+    position:absolute;
+    display:flex;
+    min-width: 100%;
+    min-height: 20%;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Noto Sans HK', sans-serif;
+    z-index:1;
+}
+
+.content-title{
+    position: absolute;
+    margin:0;
+    top:-1%;
+    font-size: 2.8em;
+    font-weight:500;
+    color:white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    transition: all ease-in-out .3s;
+}
+
+.main-content{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.para-cont{
+    position:absolute;
+    top:15%;
+    padding:5px;
+    text-align: center;
+
+}
+
+.player{
+    position:absolute;
+    display:flex;
+    left:50%;
+    bottom:0%;
+    min-width: 100%;
+    min-height:4em;
+
+    background: var(--lighter-dark);
+
+    transform: translate(-50%);
+}
+
+.navbar{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    background-color: transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-color);
+}
+
+.song-name{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 14em;
+
+    font-size:1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+
+    color:white;
+
+    bottom:50%;
+    left:50%;
+
+    transform: translate(-50%,0);
+
+    transition: all ease-in-out .3s;
+    z-index: 3;
+}
+
+.progress-saver{
+    position:absolute;
+
+    display:flex;
+
+    min-height: 15%;
+    min-width: 0;
+    bottom:0;
+    
+    background-color: white;
+}
+
+/* hover handling */
+.child-container:hover .backg{
+    background-color: var(--main-color);
+}
+
+.child-container:hover .song-name{
+    color: var(--main-color);
+}
+
+.child-container:hover{
+    transform: translate(-50%, -50%) scale(1.03);
+    box-shadow: 0px 0px 25px var(--main-color);
+}
+
+.child-container:hover .content-title{
+    color: var(--main-color);
+}
+
+#editable{
+    transition: all ease-in-out .1s;
+}
+
+.child-container:hover #editable{
+    color:var(--main-color);
+}
+
+/* hover handling */
+
+/* socials */
+
+.social-buttons{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: transparent;
+    transition: all ease-in-out .2s;
+    padding:0;
+
+    top:30%;
+    color:white;
+    font-size:1em;
+
+    border: white 2px solid;
+    border-radius:10px;
+
+}
+
+.discord{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width: 2em;
+    min-height: 2em;
+
+    top:30%;
+    left:30%;
+}
+
+.youtube{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width: 2em;
+    min-height: 2em;
+
+    top:30%;
+    right:41%;
+}
+
+.github{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width: 2em;
+    min-height: 2em;
+
+    top:30%;
+    left:41%;
+}
+
+.namemc{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+
+    min-width: 2em;
+    min-height: 2em;
+
+    top:30%;
+    right:30%;
+
+    fill:white;
+}
+
+.namemc svg{
+    width: 1.4em;
+    height: 1.4em;
+}
+
+/*socials */
+
+/*social hovers*/
+
+.discord:hover{
+    background-color: #5865F2;
+    border: #5865F2 2px solid;
+    box-shadow: 0px 0px 10px var(--main-color);
+}
+
+.youtube:hover{
+    background-color: #FF0000;
+    border: #FF0000 2px solid;
+    box-shadow: 0px 0px 10px var(--main-color);
+}
+
+.github:hover{
+    background-color: rgb(43, 43, 43);
+    border:rgb(43, 43, 43) 2px solid;
+    box-shadow: 0px 0px 10px var(--main-color);
+}
+
+.namemc:hover{
+    background-color: #191927;
+    border: #191927 2px solid;
+    box-shadow: 0px 0px 10px var(--main-color);
+}
+/*social hovers*/
+
+
+.backg{
+    position:absolute;
+    top:50%;
+    left:50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    transition: all ease-in-out .3s;
+}
+
+.navbutton{
+    border:0;
+    background-color: transparent;
+    color:white;
+
+    transition: all ease-in-out .3s;
+    padding:0;
+    font-size:1.5em;
+}
+
+#play-pause{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: transparent;
+    transition: all ease-in-out .3s;
+    bottom:29%;
+    font-size: 1.2em;
+}
+
+#play-pause:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+
+#next {
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: transparent;
+    transition: all ease-in-out .3s;
+    right:42%;
+    bottom:32.5%;
+    font-size: 1em;
+}
+
+#next:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+#previous {
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: transparent;
+    transition: all ease-in-out .3s;
+    left:42%;
+    bottom:32.5%;
+    font-size: 1em;
+}
+
+#previous:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .child-container {
+    min-width: 19em;
+    min-height: 35em;
+    position:absolute;
+    display:flex;
+    background-color: var(--lighter-dark);
+    border-radius: 30px;
+}
+
+    #play-pause{
+        font-size:1.3em;
+        bottom:25%;
+    }
+
+    #previous{
+        left:35%;
+        padding-left:.3em;
+        top:45%;
+    }
+
+    #next{
+        right:35%;
+        padding-right:.3em;
+        top:45%;
+    }
+
+    .song-name{
+        bottom:55%;
+        font-size:.9em;
+        min-width: 100%;
+    }
+
+    .banner{
+        min-height: 10%;
+    }
+
+    .content-title{
+        top:.05%;
+        font-size: 2.5em;
+    }
+
+    .social-buttons{
+        top:18%;
+        max-width: 2em;
+        max-height: 2em;
+    }
+
+    .main-content{
+        top:-8%;
+    }
+
+    .discord{
+        left:15%
+    }
+
+    .youtube{
+        right:34.5%
+    }
+
+    .github{
+        left:34.5%;
+    }
+
+    .namemc{
+        right:15%;
+    }
+
+}
+

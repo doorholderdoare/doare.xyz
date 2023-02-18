@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 hidden>yes i know my stuff is not reactive, don't judge me i just wanted this okay?</h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="DOOR" property="og:title" />
+    <meta content="Avid skript kiddie - copy&paste aficionado" property="og:description" />
+    <meta content="https://doare.xyz" property="og:url" />
+    <meta content="https://i.imgur.com/5S3ij02.png" property="og:image" />
+    <meta content="#FF7400" data-react-helmet="true" name="theme-color" />
+  
+  
+  	<!-- no cache -->
+  	<meta http-equiv="Expires" CONTENT="0">  
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">  
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+  	<!-- no cache -->
+
+    <title>DOARE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="resources/style_2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="pre-load">
+        <span class="btn-screen"><u>Click here!</u></span>
+    </div>
+
+    <div class="main-container">
+        <div class="child-container">
+
+            
+
+            <div class="banner">
+                <img src="resources/gif.gif" alt="gif-banner" class="banner-gif">
+            </div>
+
+            <div class="socials">
+                <div class="main-content">
+                    <p class="para-cont">Avid <span id="editable">skript kiddie</span> - <span id="editable">copy & paste aficionado</p></span>
+                </div>
+                
+                <div class="discord social-buttons">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                <div class="namemc social-buttons">
+                    <svg style="background-color:transparent" viewBox="-8 -8 16 16" shape-rendering="crispEdges" class="align-top" width="20px" height="20px">
+                        <path d="M-5-5L+3-5L+3-3L+5-3L+5+5L+3+5L+3-3L-3-3L-3+5L-5+5"></path>
+                      </svg>
+                </div>
+                <div class="github social-buttons">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="youtube social-buttons">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="content">
+                <h3 class="content-title">扉</h3>
+            </div>
+
+            <div class="player">
+                <h1 class="song-name" id="name">Song Name</h1>
+                <div class="navbar">
+                    <button class="btn-prev navbutton" id="previous" onclick = prevTrack()>
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+                    <button class="btn-next navbutton" id="next" onclick = nextTrack()>
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+                    <button class="btn-player-pause navbutton" id="play-pause">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                </div>
+                <div class="progress-saver" id="progbar">
+                    <div class="backg" id="bg">&nbsp</div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <script src="resources/script_2.js"></script>
+</body>
+</html>
