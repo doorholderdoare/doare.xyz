@@ -16,7 +16,7 @@ def index():
 
 @app.route('/index')
 def redirect_index():
-    return redirect('/')
+    return redirect('https://hub.doare.xyz')
 
 if __name__ == '__main__':
     app.run(debug=True)

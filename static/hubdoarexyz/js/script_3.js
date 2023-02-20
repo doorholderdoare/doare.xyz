@@ -25,22 +25,23 @@ function load(index){
 songlist = [
     {"name":"Love Again"
     ,"artist":"The Kid LAROI",
-    "path":"../static/music/love-again.mp3",
+    "path":"../static/hubdoarexyz/music/love-again.mp3",
     },
     {
     "name":"Always Do",
     "artist":"The Kid LAROI",
-    "path":"../static/music/always-do.mp3",
+    "path":"../static/hubdoarexyz/music/always-do.mp3",
     },
     {
-        "name":"Bye Bye",
-        "artist":"Juice WRLD",
-        "path":"../static/music/bye-bye.mp3",
+    "name":"Bye Bye",
+    "artist":"Juice WRLD",
+    "path":"../static/hubdoarexyz/music/bye-bye.mp3",
     },
     {
-        "name":"Understand",
-        "artist":"BoyWithUke",
-        "path":"../static/music/understand.mp3",
+    "name":"Understand",
+    "artist":"BoyWithUke",
+    "path":"../static/hubdoarexyz/music/understand.mp3"
+
     }
 ]
 
