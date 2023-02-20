@@ -9,14 +9,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    resp = make_response(render_template('index.html'))
+    resp = make_response(redirect('https://hub.doare.xyz'))
     resp.set_cookie('been', 'true', max_age=86400)
     
     return resp
 
-@app.route('/index')
-def redirect_index():
-    return redirect('https://hub.doare.xyz')
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.run(debug=True)

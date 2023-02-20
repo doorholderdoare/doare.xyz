@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+
+:root{
+    --main-color: rgb(255, 166, 0);
+    --shadow-color: rgb(161, 105, 0);
+    --dark-bg: rgb(10,10,10);
+    --cooler-color: rgb(165, 82, 206);
+    --lighter-dark: rgb(15,15,15);
+    --lighter-color: rgb(25,25,25);
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.2em;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+h1{
+    cursor:default;
+    font-size: 3em;
+    transition: all ease-in-out .2s;
+}
+
+h1:hover{
+    cursor:default;
+    color: var(--main-color);
+}
+
+.textError{
+    top:35%;    
+    font-size: 1em;
+    position:absolute;
+    text-align: center;
+    padding:20px;
+
+}
+
+.footer{
+    position:absolute;
+    color:black;
+    bottom:5%;
+    left:50%;
+    transform:translate(-50%);
+
+    text-align:center;
+    font-size: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: white;
+    border-radius: 10px;
+
+    transition: all ease-in-out .2s;
+}
+
+span{
+    transition: all ease-in-out .2s;
+}
+
+.footer:hover{
+    cursor:default;
+    bottom:5%;
+    left:50%;
+    transform:translate(-50%) scale(1.1);
+    
+}
+
+.footer:hover span{
+    cursor:default;
+    color: red;
+}
+
+button{
+    margin:0;
+    border:0;
+    position: absolute;
+    font-family: 'Shantell Sans', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10em;
+    min-height:2em;
+    font-size:1em;
+}
+
+.symb-l{
+    padding-right: 20px;
+}
+
+.symb-r{
+    padding-left: 20px;
+    padding-right:0px;
+}
+
+.contact{
+    top: 50%;
+    right: 38%;
+    transform:translate(0,-50%);
+
+    background: linear-gradient(to right, var(--lighter-color) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all ease-out .2s;
+
+    /* style */
+    border-radius: 10px;
+
+}
+
+.go-back{
+    top: 50%;
+    left: 38%;
+    transform:translate(0, -50%);
+
+    background: linear-gradient(to right, white 50%, var(--lighter-color) 50%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: all ease-out .2s;
+
+    /* style */
+    border-radius: 10px;
+}
+
+.contact:hover{
+    background-position:left bottom;
+    color: var(--main-color);
+
+    top: 50%;
+    right: 38%;
+    transform:translate(0, -50%) scale(1.1);
+}
+
+.go-back:hover{
+    background-position:right bottom;
+    color: var(--main-color);
+
+    top: 50%;
+    left: 38%;
+    transform:translate(0, -50%) scale(1.1);
+}
