@@ -109,7 +109,7 @@ button{
     transform:translate(0,-50%);
 
     background: linear-gradient(to right, var(--lighter-color) 50%, white 50%);
-    background-size: 200% 100%;
+    background-size: 200% 150%;
     background-position: right;
     transition: all ease-out .2s;
 
@@ -124,7 +124,7 @@ button{
     transform:translate(0, -50%);
 
     background: linear-gradient(to right, white 50%, var(--lighter-color) 50%);
-    background-size: 200% 100%;
+    background-size: 200% 150%;
     background-position: left;
     transition: all ease-out .2s;
 
