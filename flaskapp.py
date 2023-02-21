@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    resp = make_response(redirect('https://hub.doare.xyz'))
+    resp = make_response(render_template('index.html'))
     resp.set_cookie('been', 'true', max_age=86400)
     
     return resp
